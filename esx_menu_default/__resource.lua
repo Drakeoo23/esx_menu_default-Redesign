@@ -1,27 +1,14 @@
-resource_manifest_version '44febabe-d386-4d18-afbe-5e627f4af937'
+fx_version 'adamant'
 
-description 'ESX Menu Default'
+game 'gta5'
+lua54 'yes'
+version '1.10.6'
+description 'ESX Menu Redesign by Drakeo23'
 
-version '1.0.4'
+client_scripts { '@es_extended/imports.lua', 'client/main.lua' }
 
-client_scripts {
-	'@es_extended/client/wrapper.lua',
-	'client/main.lua'
-}
+ui_page { 'html/ui.html' }
 
-ui_page {
-	'html/ui.html'
-}
+files { 'html/ui.html', 'html/css/app.css', 'html/js/mustache.min.js', 'html/js/app.js', 'html/fonts/*.*' }
 
-files {
-	'html/ui.html',
-	'html/css/app.css',
-	'html/js/mustache.min.js',
-	'html/js/app.js',
-	'html/fonts/pricedownbl.otf',
-	'html/fonts/bankgothic.ttf'
-}
-
-dependencies {
-	'es_extended'
-}
+dependencies { 'es_extended' }
